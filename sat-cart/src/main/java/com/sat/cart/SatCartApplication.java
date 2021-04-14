@@ -1,4 +1,4 @@
-package com.leyou.cart;
+package com.sat.cart;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

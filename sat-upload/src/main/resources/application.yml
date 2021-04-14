@@ -19,7 +19,7 @@ sat:
       - image/jpeg
       - image/png
       - image/bmp
-    baseUrl: http://image.leyou.com/
+    baseUrl: http://image.sat.com/
 fdfs:
   connect-timeout: 600
   so-timeout: 2500

@@ -1,4 +1,4 @@
-package com.leyou.service;
+package com.sat.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("com.leyou.service.mapper")
+@MapperScan("com.sat.service.mapper")
 public class SatItemService {
 
     public static void main(String[] args) {

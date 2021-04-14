@@ -6,9 +6,9 @@ spring:
   redis:
     host: 192.168.82.100
   rabbitmq:
-    virtual-host: /leyou
-    username: leyou
-    password: leyou
+    virtual-host: /test
+    username: root
+    password: root
     host: 192.168.82.100
 eureka:
   client:

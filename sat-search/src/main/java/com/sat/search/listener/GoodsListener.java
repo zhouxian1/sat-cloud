@@ -1,6 +1,6 @@
 package com.sat.search.listener;
 
-import com.sat.search.service.SearchService;
+import org.elasticsearch.search.SearchService;
 import org.springframework.amqp.core.ExchangeTypes;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
@@ -16,8 +16,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class GoodsListener {
 
-    @Autowired
-    private SearchService searchService;
+//    @Autowired
+//    private SearchService searchService;
 
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(name = "ly.search.insert.queue", durable = "true"),
@@ -29,7 +29,7 @@ public class GoodsListener {
     public void listenInsert(Long id) {
         //监听新增或更新
         if (id != null) {
-            searchService.insertOrUpdate(id);
+//            searchService.insertOrUpdate(id);
         }
 
     }
@@ -44,7 +44,7 @@ public class GoodsListener {
     public void listenDelete(Long id) {
         //监听删除
         if (id != null) {
-            searchService.delete(id);
+//            searchService.delete(id);
         }
     }
 }

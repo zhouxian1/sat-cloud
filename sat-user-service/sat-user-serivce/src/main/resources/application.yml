@@ -4,15 +4,15 @@ spring:
   application:
     name: user-service
   datasource:
-    url: jdbc:mysql://localhost:3306/leyou
+    url: jdbc:mysql://localhost:3306/test
     username: root
     password: root
   redis:
     host: 192.168.82.100
   rabbitmq:
-    username: leyou
-    password: leyou
-    virtual-host: /leyou
+    username: root
+    password: root
+    virtual-host: /test
     host: 192.168.82.100
 eureka:
   client:
@@ -23,4 +23,4 @@ eureka:
     ip-address: 127.0.0.1
 
 mybatis:
-  type-aliases-package: com.leyou.user.pojo
+  type-aliases-package: com.sat.user.pojo

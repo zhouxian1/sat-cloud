@@ -4,7 +4,7 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8
+    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=UTF-8
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
@@ -14,9 +14,9 @@ spring:
     host: 192.168.82.100
   rabbitmq:
     host: 192.168.82.100
-    username: leyou
-    password: leyou
-    virtual-host: /leyou
+    username: root
+    password: root
+    virtual-host: /test
     template:
       retry:
         enabled: true
@@ -33,7 +33,7 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
 mybatis:
-  type-aliases-package: com.leyou.order.pojo
+  type-aliases-package: com.sat.order.pojo
 sat:
   jwt:
     pubKeyPath: /Users/bystander/id_rsa.pub # 公钥地址
